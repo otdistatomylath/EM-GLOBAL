@@ -37,12 +37,12 @@ TRAVEL AGENCY
       </a>
     </div>
   </div>
-</body>
-</html>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Agencia de Viajes Interactiva</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitios Turísticos en Italia</title>
   <style>
     /* Estilos CSS para la página web */
     body {
@@ -51,67 +51,88 @@ TRAVEL AGENCY
       padding: 0;
     }
     
-    .header {
+    header {
       background-color: #333;
       color: #fff;
       padding: 20px;
       text-align: center;
     }
     
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
+    nav {
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    
+    nav ul li {
+      margin: 0 10px;
+    }
+    
+    main {
       padding: 20px;
     }
     
-    .destination {
+    h1 {
+      text-align: center;
+    }
+    
+    .site {
       margin-bottom: 20px;
     }
     
-    .destination h2 {
-      color: #333;
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-    
-    .destination p {
-      color: #777;
-      font-size: 16px;
-    }
-    
-    .destination img {
-      max-width: 100%;
+    .site img {
+      width: 100%;
       height: auto;
+    }
+    
+    .site h2 {
+      margin-top: 10px;
+    }
+    
+    .site p {
       margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="header">
-    <h1>Agencia de Viajes Interactiva</h1>
-  </div>
+  <header>
+    <h1>Sitios Turísticos en Italia</h1>
+  </header>
   
-  <div class="container">
-    <div class="destination">
-      <h2>Destino 1</h2>
-      <img src="ruta-de-imagen.jpg" alt="Imagen del destino 1">
-      <p>Descripción del destino 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <button>Ver más</button>
-    </div>
+  <nav>
+    <ul>
+      <li><a href="#roma">Roma</a></li>
+      <li><a href="#florencia">Florencia</a></li>
+      <li><a href="#venecia">Venecia</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section id="roma" class="site">
+      <h2>Roma</h2>
+      <img src="roma.jpg" alt="Roma">
+      <p>Roma, la Ciudad Eterna, es famosa por su historia antigua, sus impresionantes monumentos como el Coliseo y el Foro Romano, así como por su deliciosa gastronomía italiana.</p>
+    </section>
     
-    <div class="destination">
-      <h2>Destino 2</h2>
-      <img src="ruta-de-imagen.jpg" alt="Imagen del destino 2">
-      <p>Descripción del destino 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <button>Ver más</button>
-    </div>
+    <section id="florencia" class="site">
+      <h2>Florencia</h2>
+      <img src="florencia.jpg" alt="Florencia">
+      <p>Florencia, cuna del Renacimiento, alberga obras maestras artísticas como el David de Miguel Ángel y la cúpula de Brunelleschi en la catedral de Santa María del Fiore.</p>
+    </section>
     
-    <div class="destination">
-      <h2>Destino 3</h2>
-      <img src="ruta-de-imagen.jpg" alt="Imagen del destino 3">
-      <p>Descripción del destino 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <button>Ver más</button>
-    </div>
-  </div>
+    <section id="venecia" class="site">
+      <h2>Venecia</h2>
+      <img src="venecia.jpg" alt="Venecia">
+      <p>Venecia, conocida como la ciudad de los canales, ofrece paisajes románticos, paseos en góndola por los canales, la impresionante Plaza de San Marcos y la Basílica de San Marcos.</p>
+    </section>
+  </main>
 </body>
 </html>
+
